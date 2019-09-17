@@ -22,30 +22,61 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="117" id="zEw-eb-dcg" customClass="CeldaAlumnoController" customModule="tablevews" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="117"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="120" id="zEw-eb-dcg" customClass="CeldaAlumnoController" customModule="tablevews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zEw-eb-dcg" id="rBi-iJ-OKZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xZ-jL-6Aw">
-                                                    <rect key="frame" x="20" y="48" width="62" height="21"/>
+                                                    <rect key="frame" x="20" y="11" width="62" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMH-zP-M4u">
+                                                    <rect key="frame" x="20" y="76" width="53" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matricula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YB-nb-s0e">
+                                                    <rect key="frame" x="323" y="11" width="71" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poo-Ki-Zkd">
+                                                    <rect key="frame" x="20" y="47" width="62" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9xZ-jL-6Aw" firstAttribute="leading" secondItem="rBi-iJ-OKZ" secondAttribute="leadingMargin" id="RzE-d1-fcx"/>
-                                                <constraint firstItem="9xZ-jL-6Aw" firstAttribute="centerY" secondItem="rBi-iJ-OKZ" secondAttribute="centerY" id="hlo-rV-ztN"/>
+                                                <constraint firstItem="9xZ-jL-6Aw" firstAttribute="top" secondItem="rBi-iJ-OKZ" secondAttribute="topMargin" id="0uM-jd-5Rt"/>
+                                                <constraint firstItem="7YB-nb-s0e" firstAttribute="trailing" secondItem="rBi-iJ-OKZ" secondAttribute="trailingMargin" id="DV9-Pl-Z54"/>
+                                                <constraint firstItem="JMH-zP-M4u" firstAttribute="top" secondItem="poo-Ki-Zkd" secondAttribute="bottom" constant="8" id="IEN-Eg-0Wc"/>
+                                                <constraint firstItem="JMH-zP-M4u" firstAttribute="leading" secondItem="rBi-iJ-OKZ" secondAttribute="leading" constant="20" id="JMb-tp-aga"/>
+                                                <constraint firstItem="poo-Ki-Zkd" firstAttribute="leading" secondItem="rBi-iJ-OKZ" secondAttribute="leadingMargin" id="cuZ-Xo-Tru"/>
+                                                <constraint firstItem="9xZ-jL-6Aw" firstAttribute="leading" secondItem="rBi-iJ-OKZ" secondAttribute="leadingMargin" id="isF-0M-Nbf"/>
+                                                <constraint firstItem="7YB-nb-s0e" firstAttribute="top" secondItem="rBi-iJ-OKZ" secondAttribute="topMargin" id="kTS-eb-pDP"/>
+                                                <constraint firstItem="poo-Ki-Zkd" firstAttribute="top" secondItem="9xZ-jL-6Aw" secondAttribute="bottom" constant="15" id="xyl-NS-wk2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lblApellido" destination="poo-Ki-Zkd" id="T0g-wg-45d"/>
+                                            <outlet property="lblCorreo" destination="JMH-zP-M4u" id="5Ke-xS-jBQ"/>
+                                            <outlet property="lblMatricula" destination="7YB-nb-s0e" id="X1b-0S-YnR"/>
                                             <outlet property="lblNombre" destination="9xZ-jL-6Aw" id="jn9-1u-haj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="K1E-U9-IiE"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yhz-zM-leu"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
